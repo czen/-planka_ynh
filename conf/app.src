@@ -1,5 +1,5 @@
-SOURCE_URL=url of app's source
-SOURCE_SUM=sha256 checksum
+SOURCE_URL=https://github.com/plankanban/planka/archive/refs/tags/v1.1.5.tar.gz
+SOURCE_SUM=cdc05a9680b9c70eabb351630b04d4bf6b8f08958f97a6de241d5c110cd107cf
 SOURCE_SUM_PRG=sha256sum
 SOURCE_FORMAT=tar.gz
 SOURCE_IN_SUBDIR=true

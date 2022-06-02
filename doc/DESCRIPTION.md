@@ -1,9 +1,11 @@
-Some long and extensive description of what the app is and does, lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-
+A Trello-like kanban board built with React and Redux.
 ### Features
 
-- Ut enim ad minim veniam, quis nostrud exercitation ullamco ;
-- Laboris nisi ut aliquip ex ea commodo consequat ;
-- Duis aute irure dolor in reprehenderit in voluptate ;
-- Velit esse cillum dolore eu fugiat nulla pariatur ;
-- Excepteur sint occaecat cupidatat non proident, sunt in culpa."
+- reate projects, boards, lists, cards, labels and tasks
+- Add card members, track time, set a due date, add attachments, write comments
+- Markdown support in a card description and comment
+- Filter by members and labels
+- Customize project background
+- Real-time updates
+- User notifications
+- Internationalization
