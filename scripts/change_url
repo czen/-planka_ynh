@@ -28,11 +28,7 @@ ynh_script_progression --message="Loading installation settings..." --time --wei
 
 # Needed for helper "ynh_add_nginx_config"
 final_path=$(ynh_app_setting_get --app=$app --key=final_path)
-
-# Add settings here as needed by your application
-#db_name=$(ynh_app_setting_get --app=$app --key=db_name)
-#db_user=$db_name
-#db_pwd=$(ynh_app_setting_get --app=$app --key=db_pwd)
+timezone=$(cat /etc/timezone)
 
 #=================================================
 # BACKUP BEFORE CHANGE URL THEN ACTIVE TRAP
@@ -106,10 +102,14 @@ then
 fi
 
 #=================================================
-# SPECIFIC MODIFICATIONS
+# ADD A CONFIGURATION
 #=================================================
-# ...
-#=================================================
+ynh_script_progression --message="Adding a configuration file..." --time --weight=1
+
+ynh_add_config --template="../conf/.env.sample" --destination="$final_path/.env"
+
+chmod 400 "$final_path/.env"
+chown $app:$app "$final_path/.env"
 
 #=================================================
 # GENERIC FINALISATION
