@@ -9,8 +9,8 @@ Group=__APP__
 Environment="__YNH_NODE_LOAD_PATH__"
 Environment="PORT=__PORT__"
 Environment="NODE_ENV=production"
-WorkingDirectory=__FINALPATH__/
-ExecStart=__YNH_NODE__ run server:start:prod
+WorkingDirectory=__FINALPATH__/server/
+ExecStart=__YNH_NODE__ app.js --prod
 
 [Install]
 WantedBy=multi-user.target
