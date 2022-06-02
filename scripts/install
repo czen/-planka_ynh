@@ -129,7 +129,7 @@ ynh_script_progression --message="Building the app... (this will take some time 
 
 pushd $final_path
 	ynh_use_nodejs
-	npm install npm@latest --global
+	npm install npm@latest --location=global
 	ynh_exec_warn_less ynh_exec_as $app NODE_ENV=production $ynh_node_load_PATH $ynh_npm install --production
 	#ynh_exec_as $app env $ynh_node_load_PATH $ynh_npm run build
 popd
